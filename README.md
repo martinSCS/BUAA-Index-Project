@@ -1,2 +1,2 @@
-# BUAA-Index-Project
-A Student Information Management System of BUAA
+# 茵蒂克丝计划
+Index Project（茵蒂克丝计划）是基于北京航空航天大学的学生信息管理系统。很多学生信息虽然是公开的，却分散在各种文件中。茵蒂克丝系统旨在整合这些文件，将所需的学生信息梳理，方便大班/小班班委进行管理。
