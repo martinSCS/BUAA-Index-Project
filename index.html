@@ -10,16 +10,28 @@
     <script src="js/bootstrap.bundle.js"></script>
     <title>主界面 - Index Project</title>
 </head>
+<script>
+    function askList() {
+        classOption = $("#classOpiton").val();
+        $.get('InfoAsk.php', {
+            type : "askInfoByClass",
+            class : classOption
+        }, function(data){
+            alert(data);
+        });
+        
+    }
+</script>
 <body>
     <div class="container p-5">
         <div class="row">
             <div class="col-1"></div>
-            <div class="col-8">
+            <div class="col-12">
                 <div class="container-fluid card">
                     <div class="card-body">
                         <div class="row">
                             <div class="col">
-                                <select class="form-select" aria-label="Default select example">
+                                <select class="form-select" aria-label="Default select example" id="classOpiton">
                                     <option selected value="210411">210411</option>
                                     <option value="210412">210412</option>
                                     <option value="210413">210413</option>
@@ -31,12 +43,15 @@
                                 </select>
                             </div>
                             <div class="col">
-                                <button type="button" class="btn btn-primary small">查询</button>
+                                <button type="button" class="btn btn-primary small" onclick="askList()">查询</button>
                             </div>
                             <div class="col">
                                 <button type="button" class="btn btn-primary small">查询全部</button>
                             </div>
                         </div>
+                    </div>
+                    <div class="card-body">
+
                     </div>
                 </div>
             </div>
